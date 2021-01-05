@@ -35,24 +35,24 @@ pauseId.addEventListener("click", function(){
         counting = true 
     }
 })
-
-heart_id.addEventListener("click", function(){
-    let like = document.querySelector(".likes")
+// still confused on this one
+// heart_id.addEventListener("click", function(){
+//     let like = document.querySelector(".likes")
   
-    if(document.getElementById(`Li${counter}`) == null){
-      let li = document.createElement("li");
-      li.setAttribute("id", `Li${counter}`)
-      li.innerHTML = `${counter} have this many likes:1`
-      like.appendChild(li)
-    }
-    else {
-      let li = document.getElementById(`Li${counter}`)
-      let splitted = parseInt(li.innerHTML.split(":")[1]) + 1
-      li.innerHTML = `${counter} have this many likes:${splitted}`
-      like.appendChild(li)
-    }
+//     if(document.getElementById(`Li${counter}`) == null){
+//       let li = document.createElement("li");
+//       li.setAttribute("id", `Li${counter}`)
+//       li.innerHTML = `${counter} have this many likes:1`
+//       like.appendChild(li)
+//     }
+//     else {
+//       let li = document.getElementById(`Li${counter}`)
+//       let splitted = parseInt(li.innerHTML.split(":")[1]) + 1
+//       li.innerHTML = `${counter} have this many likes:${splitted}`
+//       like.appendChild(li)
+//     }
   
-  })
+//   })
 
 commentForm.addEventListener("submit", function(e){
     e.preventDefault();
